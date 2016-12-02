@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="topcategory">
+        <text id="vegetable" class="categroyNormal {{ (selectedcategory == 'vegetable') ? 'categroySelected' : ''}}" bindtap="onCategoryTapped">蔬 菜</text>
+        <view class="vertical_sep_line"></view>
+        <text id="meat" class="categroyNormal {{ (selectedcategory == 'meat') ? 'categroySelected' : ''}}" bindtap="onCategoryTapped">肉 类</text>
+        <view class="vertical_sep_line"></view>
+        <text id="fruit" class="categroyNormal {{ (selectedcategory == 'fruit') ? 'categroySelected' : ''}}" bindtap="onCategoryTapped">水 果</text>
+    </view>
+</view>

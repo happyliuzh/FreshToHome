@@ -1,0 +1,11 @@
+/*标签共用的样式*/
+Page
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100%;
+    width: 750rpx;
+    background: "#e50263";
+}

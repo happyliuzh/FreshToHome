@@ -1,0 +1,54 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-color: #e56347;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 50rpx;
+}
+
+.userinfo-location
+{
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  color: #bbb;
+  margin-bottom: 30rpx;
+}
+
+
+.me_center_item_list
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 120rpx;
+    border-bottom: 1px solid #d8d8d8;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    width: 670rpx;
+}
+
+.item_left_title
+{
+    color: #e56347;
+    font-size: 40rpx;
+    margin-left: 20rpx;
+}
+
+.menu-item-api-item-arrow {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 30rpx;
+}
+

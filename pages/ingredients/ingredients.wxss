@@ -1,0 +1,32 @@
+.topcategory
+{
+    height: 100rpx;
+    width: 750rpx;
+    background: "e50263";
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.categroySelected
+{
+    color: #e50263;
+}
+
+.categroyNormal
+{
+    font-size: 40rpx;
+    background: #99999;
+    margin-top: 10rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+
+.vertical_sep_line
+{
+    width: 1px;
+    height: 36rpx;
+    background: #d8d8d8;
+}
