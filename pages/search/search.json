@@ -1,7 +1,7 @@
 {
     "navigationBarBackgroundColor":"#e50263",
     "navigationBarTextStyle":"white",
-    "navigationBarTitleText":"我的购物车",
+    "navigationBarTitleText":"找找看",
     "backgroundColor":"#eeeeee",
     "backgroundTextStyle":"light",
     "enablePullDownRefresh": true

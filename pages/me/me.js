@@ -25,9 +25,15 @@ Page({
     })
   },
   onAboutUsTapped:function(){
-    console.log("12345");
     wx.navigateTo({
       url: '../aboutus/aboutus'
     })
-  }
+  },
+  onPullDownRefresh: function () {
+        wx.showNavigationBarLoading();
+        setTimeout(function(){
+            wx.stopPullDownRefresh();
+            wx.hideNavigationBarLoading();
+        }, 1000);
+    }
 });

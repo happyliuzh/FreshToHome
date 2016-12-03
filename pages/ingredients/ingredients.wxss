@@ -1,3 +1,4 @@
+
 .topcategory
 {
     height: 100rpx;
@@ -8,8 +9,9 @@
     flex-direction: row;
     justify-content: space-around;
     border-bottom: 1px solid #d8d8d8;
-}
+    border-top: 1px solid #d8d8d8;
 
+}
 .categroySelected
 {
     color: #e50263;
@@ -30,3 +32,77 @@
     height: 36rpx;
     background: #d8d8d8;
 }
+
+.ingredientItem
+{
+    width: 100%;
+    height: 240rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1rpx solid #d8d8d8;
+}
+
+
+.ingredientImage
+{
+    width: 180rpx;
+    height: 180rpx;
+    margin-left: 20rpx;
+    margin-top: 30rpx;
+    background: #d8d8d8;
+}
+
+.ingredientDesView
+{
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredientName
+{
+    font-size: 35rpx;
+    color: #e50263;
+}
+
+.ingredientPrice
+{
+    margin-top: 20rpx;
+    font-size: 35rpx;
+    color: #e38976;
+}
+
+.ingredientStore
+{
+    margin-top: 20rpx;
+    font-size: 35rpx;
+    color: #e45327;
+}
+
+.ingredientRightView
+{
+    position: relative;
+    flex:1;
+    margin-left: 50rpx;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ingredientAmountWrapView
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30rpx;
+    justify-content: space-between;
+}
+
+.ingredientAddCart
+{
+    margin-top: 30rpx;
+}
+

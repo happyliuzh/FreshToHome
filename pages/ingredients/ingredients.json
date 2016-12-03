@@ -1,7 +1,7 @@
 {
-    "navigationBarBackgroundColor":"#E50263",
+    "navigationBarBackgroundColor":"#e50263",
     "navigationBarTextStyle":"white",
-    "navigationBarTitleText":"食材",
+    "navigationBarTitleText":"食材推荐",
     "backgroundColor":"#eeeeee",
     "backgroundTextStyle":"light",
     "enablePullDownRefresh": true

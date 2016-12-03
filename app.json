@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/ingredients/ingredients",
+    "pages/search/search",
     "pages/shoppingcart/shoppingcart",
     "pages/aboutus/aboutus",
     "pages/me/me"
@@ -16,7 +17,13 @@
     "selectedColor":"#e50263",
     "list": [{
       "pagePath": "pages/ingredients/ingredients",
-      "text": "食材",
+      "text": "食材推荐",
+      "iconPath":"icons/tab_btn_healthy_f.png",
+      "selectedIconPath":"icons/tab_btn_healthy_s.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "找找看",
       "iconPath":"icons/tab_btn_healthy_f.png",
       "selectedIconPath":"icons/tab_btn_healthy_s.png"
     },
