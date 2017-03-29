@@ -1,16 +1,16 @@
 <view class="container">
     <view  class="logoview">
-        <image class="logoimage" src="../../icons/app_icon.png" background-size="cover"></image>
+        <image class="logoimage" src="../../icons/app_icon.jpg" background-size="cover"></image>
     </view>
 
     <view class="aboutus_item_list">
     <text class="aboutus_item_list_title">公司地址</text>
-    <text class="aboutus_item_list_content">四川省成都市高新区环球中心E2-1708</text>
+    <text class="aboutus_item_list_content">四川省成都市天府新区麓山大道雅居乐</text>
     </view>
 
-    <view class="aboutus_item_list">
+    <!--<view class="aboutus_item_list">
     <text class="aboutus_item_list_title">门店地址</text>
     <text class="aboutus_item_list_content">四川省成都市新光华街7号航天科技大厦8层01号</text>
-    </view>
+    </view>-->
 
 </view>

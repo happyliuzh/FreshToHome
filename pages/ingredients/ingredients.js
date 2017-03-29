@@ -1,4 +1,8 @@
+
+const hudUtil = require('../../utils/hudUtil.js');
+
 var categoryList = ["vegetable","meat","fruit"];
+
 var pageObj = {
     //data
     data:{
@@ -37,16 +41,16 @@ var pageObj = {
         nextAction:[]
     },
     //生命周期方法
-    onLaunch:function()
+    onLoad:function(options)
     {
-
+        hudUtil.showToast_waiting();
     },
     //事件处理
     //1.处理切换分类
     onCategoryTapped:function(e)
     {
         this.setData({
-            selectedcategory : e.target.id
+            selectedcategory : e.currentTarget.id
         });
     },
     //2.下拉刷新

@@ -9,24 +9,29 @@
     </view>
 
 
-    <view class="ingredientList" wx:for="{{list}}">
-        <view class="ingredientItem">
-            <image class="ingredientImage" src=""></image>
-            <view class="ingredientDesView">
-                <text class="ingredientName">花菜</text>
-                <text class="ingredientPrice">7.00 / 500g</text>
-                <text class="ingredientStore">库存：充足</text>
-            </view>
-            <view class="ingredientRightView">
-                <view class="ingredientAmountWrapView">
-                    <text>-</text>
-                    <text>1</text>
-                    <text>+</text>
+    <view class="listWrapView">
+
+        <scroll-view class="ingredientList" wx:for="{{list}}">
+            <view class="ingredientItem">
+                <image class="ingredientImage" src=""></image>
+                <view class="ingredientDesView">
+                    <text class="ingredientName">花菜</text>
+                    <text class="ingredientPrice">7.00 / 500g</text>
+                    <text class="ingredientStore">库存：充足</text>
                 </view>
-                <button class="ingredientAddCart" type="primary" >加入购物车</button>
-            </view>   
-        </view>
+                <view class="ingredientRightView">
+                    <view class="ingredientAmountWrapView">
+                        <text>-</text>
+                        <text>1</text>
+                        <text>+</text>
+                    </view>
+                    <button class="ingredientAddCart" type="primary" >加入购物车</button>
+                </view>   
+            </view>
+        </scroll-view>
+
     </view>
+    
 
     
 </view>
