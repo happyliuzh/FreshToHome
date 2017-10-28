@@ -1,15 +1,128 @@
-<view class="container">
-    
-    <view class="topcategory">
-        <text id="vegetable" class="categroyNormal {{ (selectedcategory == 'vegetable') ? 'categroySelected' : ''}}" bindtap="onCategoryTapped">蔬 菜</text>
-        <view class="vertical_sep_line"></view>
-        <text id="meat" class="categroyNormal {{ (selectedcategory == 'meat') ? 'categroySelected' : ''}}" bindtap="onCategoryTapped">肉 类</text>
-        <view class="vertical_sep_line"></view>
-        <text id="fruit" class="categroyNormal {{ (selectedcategory == 'fruit') ? 'categroySelected' : ''}}" bindtap="onCategoryTapped">水 果</text>
-    </view>
+<!--<view class="container">-->
+
+<view class="top-tab">
+  <view class="top-tab-item {{currentTopItem==idx ? 'active' : ''}}" wx:for="{{topTabItems}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="switchTab">
+    {{item}}
+  </view>
+</view>
 
 
-    <view class="listWrapView">
+<swiper class="swiper" current="{{currentTopItem}}" bindchange="bindChange" duration="300" style="height:{{swiperHeight}}px" >
+
+  <!--蔬菜-->
+  <swiper-item class="swiperItem">
+  <!--<scroll-view class="ingredientList" wx:for="{{list}}">
+            <view class="ingredientItem">
+                <image class="ingredientImage" src=""></image>
+                <view class="ingredientDesView">
+                    <text class="ingredientName">花菜</text>
+                    <text class="ingredientPrice">7.00 / 500g</text>
+                    <text class="ingredientStore">库存：充足</text>
+                </view>
+                <view class="ingredientRightView">
+                    <view class="ingredientAmountWrapView">
+                        <text>-</text>
+                        <text>1</text>
+                        <text>+</text>
+                    </view>
+                    <button class="ingredientAddCart" type="primary" >加入购物车</button>
+                </view>   
+            </view>
+        </scroll-view>-->
+    <scroll-view class="ingredientList" scroll-y="true" bindscrolltolower="loadMoreData" upper-threshold="50px" bindscrolltoupper="onPullDownRefresh">
+      
+      <block wx:for="{{list}}" wx:for-item="item">
+          <!--<navigator url="detail?id={{item.id}}">
+            <template is="mainTabCell" data="{{item}}" />
+          </navigator>-->
+
+          <view class="ingredientItem">
+                <image class="ingredientImage" src=""></image>
+                <view class="ingredientDesView">
+                    <text class="ingredientName">花菜</text>
+                    <text class="ingredientPrice">7.00 / 500g</text>
+                    <text class="ingredientStore">库存：充足</text>
+                </view>
+                <view class="ingredientRightView">
+                    <view class="ingredientAmountWrapView">
+                        <text>-</text>
+                        <text>1</text>
+                        <text>+</text>
+                    </view>
+                    <button class="ingredientAddCart" type="primary" >加入购物车</button>
+                </view>   
+            </view>
+      </block>
+
+    </scroll-view>
+
+
+  </swiper-item>
+
+  <!--水果-->
+  <swiper-item>
+  <scroll-view class="ingredientList" wx:for="{{list}}">
+            <view class="ingredientItem">
+                <image class="ingredientImage" src=""></image>
+                <view class="ingredientDesView">
+                    <text class="ingredientName">花菜</text>
+                    <text class="ingredientPrice">7.00 / 500g</text>
+                    <text class="ingredientStore">库存：充足</text>
+                </view>
+                <view class="ingredientRightView">
+                    <view class="ingredientAmountWrapView">
+                        <text>-</text>
+                        <text>1</text>
+                        <text>+</text>
+                    </view>
+                    <button class="ingredientAddCart" type="primary" >加入购物车</button>
+                </view>   
+            </view>
+        </scroll-view>
+    <!--<scroll-view class="scrollView" scroll-y="true" bindscrolltolower="loadMoreData" bindscrolltoupper="refreshData" >-->
+      
+      <!--<block wx:for="{{fruitDataList}}" wx:for-item="item">
+          <navigator url="detail?id={{item.id}}">
+            <template is="mainTabCell" data="{{item}}" />
+          </navigator>
+      </block>-->
+      
+    <!--</scroll-view>-->
+  </swiper-item>
+
+  <!--肉类-->
+  <swiper-item>
+  <scroll-view class="ingredientList" wx:for="{{list}}">
+            <view class="ingredientItem">
+                <image class="ingredientImage" src=""></image>
+                <view class="ingredientDesView">
+                    <text class="ingredientName">花菜</text>
+                    <text class="ingredientPrice">7.00 / 500g</text>
+                    <text class="ingredientStore">库存：充足</text>
+                </view>
+                <view class="ingredientRightView">
+                    <view class="ingredientAmountWrapView">
+                        <text>-</text>
+                        <text>1</text>
+                        <text>+</text>
+                    </view>
+                    <button class="ingredientAddCart" type="primary" >加入购物车</button>
+                </view>   
+            </view>
+        </scroll-view>
+    <!--<scroll-view class="scrollView" scroll-y="true" bindscrolltolower="loadMoreData" bindscrolltoupper="refreshData">-->
+      
+      <!--<block wx:for="{{vegitableDataList}}" wx:for-item="item">
+          <navigator url="detail?id={{item.id}}">
+            <template is="mainTabCell" data="{{item}}" />
+          </navigator>
+      </block>-->
+      
+    <!--</scroll-view>-->
+  </swiper-item>
+</swiper>
+
+    <!--<view class="listWrapView">
 
         <scroll-view class="ingredientList" wx:for="{{list}}">
             <view class="ingredientItem">
@@ -30,8 +143,8 @@
             </view>
         </scroll-view>
 
-    </view>
+    </view>-->
     
 
     
-</view>
+<!--</view>-->
